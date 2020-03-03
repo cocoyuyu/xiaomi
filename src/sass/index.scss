@@ -195,16 +195,23 @@
           border-bottom: 1px solid #ccc;
           float: left;
           margin-right: 15px;
+          background-color: #5f5750;
           ul{
+            padding-top:5px;
               li{
                   width: 78px;
                   height: 80px;
+                  color:#eee;
+                  font-size:14px;
                   text-align: center;
                   line-height: 80px;
                   float: left;
                   border-top:1px solid #ccc;
                   border-bottom:1px solid #ccc;
                   border-right:1px solid #ccc;
+                  &:hover{
+                    color:#fff;
+                  }
               }
           }
       }
@@ -226,3 +233,10 @@
       }
   }
   /* adv 结束 */
+  /* 横屏广告1 黑鲨游戏手机 开始 */
+  .heng1{
+      img{
+          width: 1226px;
+      }
+  }
+  /*  横屏广告1 黑鲨游戏手机 结束 */
