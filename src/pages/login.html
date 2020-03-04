@@ -14,31 +14,30 @@
         </div>
         <div class="loginWrap  clearfix">
             <div class="loginBox">
-                <ul>
+                <ul class="clearfix">
                     <li>账号登录</li>
                     <li>扫码登录</li>
                 </ul>
-                <form action="">
-                    <div class="input">
-                        <input type="text" placeholder="邮箱/账号/手机号码" class="user">
-                    </div>
-                    <div class="input">
-                        <input type="password" placeholder="密码" class="pass">
-                    </div>
-                    <div class="input login">
-                        <a href="javascript:0;">登录</a>
-                    </div>
-                    <div class="login_links clearfix">
-                        <a href="javascript:" class="msg_login">手机短信登录</a>
-                        <span class="line"> | </span>
-                        <a href="javascript:" class="reg">立即注册</a>
-                        <a href="#" class="forget_pwd">忘记密码？</a>
-                    </div>
-                </form>
+                <div class="formBox">
+                    <form action="">
+                        <input type="text" class="username" placeholder="邮箱/手机号码/小米id">
+                        <input type="text" class="password" placeholder="密码">
+                        <p class="tip">密码错误</p>
+                        <div class="button">登录</div>
+                        <div class="clearfix txt">
+                            <a href="javascript:" class="msg_login">手机短信登录/注册</a>
+                            <span class="reg">立即注册</span>
+                            <span class="line"> | </span>
+                            <a href="#" class="forget_pwd">忘记密码？</a>
+                        </div>
+                    </form>
+                </div>
+                
             </div>
         </div>
        
     </div>
+    <script src="../js/ajax.js"></script>
     <script src="../js/login.js"></script>
 </body>
 </html>
