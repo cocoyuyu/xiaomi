@@ -25,11 +25,10 @@
 	mask.onmousemove = function(e){
 		//为了便于mask跟随鼠标定位,需要计算鼠标在small中的坐标
 		var e = e || window.event;
-		// var x = 鼠标距离页面左侧的距离(看的见的+看不见的(此处为了以防万一)) - small(detailLeft)距离页面左侧的距离(鼠标坐标距离small左边界的距离)
+	
 		var x = e.clientX +getScroll().left -detailLeft.offsetLeft-mask.offsetWidth/2;
 		var y = e.clientY +getScroll().top -detailLeft.offsetTop-mask.offsetHeight/2;
-		// mask.style.left = x + 'px';
-		// mask.style.top = y + 'px';
+
 		// 边界判断
 		if(x<0){
 			x=0

@@ -1,40 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/detail.css">
-    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/detail.css">
 </head>
 <body>
-    <div class="main detail">
-        <div class="detail-Left" >
-            <div class="small">
-                <img src="../images/s01.jpg" alt="" /><!-- 小图片:350*350 -->
-                <div class="mask"></div><!-- 遮罩层:175*175 -->
-            </div>
-            <div class="big"><!-- 大图片所在的盒子:400*400 -->
-                <img src="../images/s02.jpg" alt="" class="bigImg" /><!-- 大图片:800*800 -->
-            </div>
-        </div>
-        <div class="detail-Right">
-            <div class="right1">
-                <h3>Redmi K30</h3>
-                <p>120Hz高帧率流速屏 / 索尼6400万前后六摄 / 6.67''小孔径全面屏 / 最高可选8GB+256GB大存储 / 高通骁龙730G处理器 / 3D四曲面玻璃机身 / 4500mAh+27W快充 / 多功能NFC</p>
-            </div>  
-                <div class="right2">
-                <p><a href="#" class="btn btn-primary" role="button">加入购物车</a><a href="#" class="btn btn-primary buy" role="button">现在购买</a></p>
-                <p><a href="#" class="btn btn-primary" role="button">我的购物车</a></p>
-            </div>       
-        </div>
-                  
-                
+
+  <div class="goodsInfo">
+    <div class="left">
+      <img src="#" alt="">
     </div>
-    <!-- js 引入开始 -->
-    <script src="../js/public.js"></script>
-    <script src="../js/detail.js"></script>
-    <!-- js 引入结束 -->
+    <div class="right">
+      <p class="goodsName">商品详细介绍</p>
+      <p class="price">100.00</p>
+      <div class="btn">
+        <button class="addCart">添加购物车</button>
+        <button>直接购买</button>
+        <a href="./cart.html">我的购物车</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script>
+   
+    // 1. 获取 localStorage 里面的数据
+    const info = JSON.parse(localStorage.getItem('goodsInfo'))
+
+    // 2. 判断数据是否存在
+    if (!info) {
+      // 能执行表示 !info 是一个 true
+      // 表示 info 是一个 false
+      // 表示数据不存在
+      alert('您要查看的数据不存在')
+      // 跳转回列表页面
+      window.location.href = './list.html'
+    }
+
+    // 3. 渲染页面
+    bindHtml()
+    function bindHtml() {
+      $('.goodsInfo img').attr('src', info.img)
+      $('.goodsInfo .goodsName').text(info.name)
+      $('.goodsInfo .price').text('￥: ' + info.price)
+    }
+
+    // console.log(info)
+
+    // 4. 点击添加购物车
+    // 4-1. 添加点击事件
+    $('.addCart').click(() => {
+      // console.log('我要添加购物车了')
+
+      // 4-2. 判断是否登录
+
+      // 4-3. 加入到购物车数组里面
+     
+      const cartList = JSON.parse(localStorage.getItem('cartList')) || []
+
+     
+      let exits = cartList.some(item => {
+        // 数组里面每一个的 id === 本页面的这条数据的 id
+        return item.id === info.id
+      })
+
+      // console.log(exits)
+      if (exits) {
+     
+        let data = null
+        for (let i = 0; i < cartList.length; i++) {
+          if (cartList[i].id === info.id) {
+            data = cartList[i]
+            break
+          }
+        }
+        // data 就是我找到的这个信息
+        data.number++
+
+        // 4-5. 数量添加的时候, 小计价格要改变
+        data.xiaoji = data.number * data.price // 数量 * 单价
+      } else {
+        // 表示没有这个信息, 直接 push 就可以了
+        // push 之前, 象里面添加一个 number 信息为 1
+        info.number = 1
+
+        // 4-5. 多添加一些信息
+        info.xiaoji = info.price // 因为默认是第一个, 小计就是单价
+        info.isSelect = false // 默认不选中
+        cartList.push(info)
+      }
+
+      // 在存储到 localStorage 里面
+      localStorage.setItem('cartList', JSON.stringify(cartList))
+    })
+  </script>
 </body>
 </html>

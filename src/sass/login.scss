@@ -37,21 +37,21 @@
                 margin-bottom: 10px;
                 color:#747774;
             }
-            p {
+            span {
                 font-size: 14px;
                 color:#ff6700;
                 margin-bottom: 10px;
                 display: none;
             }
-            .button{
+            button{
                 width:100%;
                 text-align: center;
                 padding:13px 0;
-                box-sizing:border-box;
                 margin-bottom:10px;
                 color:white;
                 background-color: #ff6700;
                 font-size: 14px;
+                outline: none;
             }
             .txt{
                 .msg_login{

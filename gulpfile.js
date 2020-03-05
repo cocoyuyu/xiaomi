@@ -79,13 +79,15 @@ const serverHandler = () => {
                  // 每一个代理配置就是一个对象
                  {
                    source: '/register', // 源, 你的代理标识符
-                   // 你直接请求下面这个地址压根也拿不到东西, 因为跨域了
-                   target: 'http://127.0.0.1/register.php' // 目标, 你要代理的地址
+                   target: 'http://localhost/register.php' // 目标, 你要代理的地址
                  },
                  {
                    source: '/login', // 源, 你的代理标识符
-                   // 你直接请求下面这个地址压根也拿不到东西, 因为跨域了
-                   target: 'http://127.0.0.1/login.php' // 目标, 你要代理的地址
+                   target: 'http://localhost/login.php' // 目标, 你要代理的地址
+                 },
+                 {
+                   source: '/test', // 源, 你的代理标识符
+                   target: 'http://localhost/test.php' // 目标, 你要代理的地址
                  }
                ]
              })) // 开启服务器
