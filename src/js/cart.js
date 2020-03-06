@@ -98,8 +98,8 @@ function bindEvent() {
       item.isSelect = this.checked
     })
 
-    // 从新使用这个数据去渲染一遍页面就可以了
-    //   因为从新渲染页面了, 页面上的元素就变了, 是一套新的元素了
+    // 重新使用这个数据去渲染一遍页面就可以了
+    //   因为重新渲染页面了, 页面上的元素就变了, 是一套新的元素了
     //   就没有事件了, 因为页面回改变元素, 我们最好使用事件委托
     bindHtml()
 
@@ -120,10 +120,10 @@ function bindEvent() {
       }
     })
 
-    // 从新渲染页面
+    // 重新渲染页面
     bindHtml()
 
-    // 从新存储到 localStorage 里面
+    // 重新存储到 localStorage 里面
     localStorage.setItem('cartList', JSON.stringify(cartList))
   })
 
@@ -142,7 +142,7 @@ function bindEvent() {
       }
     })
 
-    // 从新渲染一遍页面
+    // 重新渲染一遍页面
     bindHtml()
 
     // 重新存储一遍 localStorage
@@ -162,7 +162,7 @@ function bindEvent() {
       }
     })
 
-    // 从新渲染页面
+    // 重新渲染页面
     bindHtml()
 
     // 重新新存储一遍 localStorage
@@ -173,17 +173,32 @@ function bindEvent() {
   $('.cart').on('click', '.del', function () {
     // 拿到自己身上的 id
     const id = $(this).data('id')
-    
-    console.log('把数组中 id 为 : ' + id + ' 的数去去掉, 重新渲染页面, 重新存储到 localStorage')
+    // 循环数组找到一个id 对应的数据
+    cartList.forEach(item => {
+      if (item.id === id) {
+        console.log(item)
+      }
+      // 重新渲染页面
+    bindHtml()
+
+    // 重新新存储一遍 localStorage
+    localStorage.setItem('cartList', JSON.stringify(cartList))
+    })
+
+    // console.log('把数组中 id 为 : ' + id + ' 的数去去掉, 重新渲染页面, 重新存储到 localStorage')
   })
 
   // 4-6. 点击清除的事件
   $('.cart').on('click', '.clear', function () {
     // console.log('把数组清空')
     cartList.length = 0
-    // console.log('重新渲染页面')
     bindHtml()
     // console.log('把空数组重新存储到 localStorage 里面')
     localStorage.setItem('cartList', JSON.stringify(cartList))
+    if(cartList.length === 0){
+      alert('购物车即将被清空，确定吗')
+    }
+    console.log('重新渲染页面')
+   
   })
 }
