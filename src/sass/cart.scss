@@ -3,14 +3,14 @@
     margin: 30px auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid #333;
+    border: 1px solid #eee;
   
     > .top {
       height: 60px;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #eee;
       display: flex;
       align-items: center;
-      font-size: 35px;
+      font-size: 30px;
   
       > input {
         width: 30px;
@@ -29,14 +29,14 @@
       > li {
         display: flex;
         margin: 10px;
-        border: 1px solid #333;
+        border: 1px solid #eee;
   
         > .select {
           width: 100px;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-right: 1px solid #333;
+          border-right: 1px solid #eee;
   
           > input {
             width: 30px;
@@ -103,14 +103,15 @@
   
     > .bottom {
       height: 60px;
-      border-top: 1px solid #333;
-      font-size: 35px;
+      border-top: 1px solid #eee;
+      font-size: 30px;
       display: flex;
       align-items: center;
   
   
       > p {
         padding-right: 40px;
+        margin-left: 10px;
       }
   
       > button {

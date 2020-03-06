@@ -1,0 +1,222 @@
+[ 
+    {
+        "id": 1,
+        "name": "手机 电话卡",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 2,
+        "name": "电视 盒子",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 3,
+        "name": "笔记本 显示器 平板",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 4,
+        "name": "家电 插线板",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 5,
+        "name": "出行 穿戴 智能路由器",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 6,
+        "name": "电源 配件",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 7,
+        "name": "健康 儿童",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 8,
+        "name": "耳机 音箱",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 9,
+        "name": "生活 箱包",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 10,
+        "name": "家电 插线板",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    },
+    {
+        "id": 11,
+        "name": "我来凑数",
+        "list": [
+        {
+            "list_id": 101,
+            "list_name": "小米10 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 102,
+            "list_name": "小米10",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90"
+        },
+        {
+            "list_id": 103,
+            "list_name": "小米CC9 pro",
+            "list_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90"
+        }]
+    }
+]

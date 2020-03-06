@@ -48,7 +48,7 @@ function bindHtml() {
           <input type="text" value="${ item.number }">
           <button class="add" data-id=${ item.id }>+</button>
         </div>
-        <p class="xiaoji">￥： ${ item.xiaoji.toFixed(2) }</p>
+        <p class="xiaoji">￥： ${ item.xiaoji }</p>
         <div class="del" data-id=${ item.id }>删除</div>
       </li>
     `
@@ -77,7 +77,7 @@ function bindHtml() {
     </ul>
     <div class="bottom">
       <p>选中商品数量  <span>${ selectNumber }</span></p>
-      <p>总价： <span>￥： ${ selectPrice.toFixed(2) }</span></p>
+      <p>总价： <span>￥： ${ selectPrice }</span></p>
       <button class="pay" ${ selectArr.length ? '' : 'disabled'}>去支付</button>
       <button class="clear">清空购物车</button>
     </div>
@@ -103,7 +103,7 @@ function bindEvent() {
     //   就没有事件了, 因为页面回改变元素, 我们最好使用事件委托
     bindHtml()
 
-    // 在从新存储一遍 localStorage
+    // 重新新存储一遍 localStorage
     localStorage.setItem('cartList', JSON.stringify(cartList))
   })
 
@@ -123,7 +123,7 @@ function bindEvent() {
     // 从新渲染页面
     bindHtml()
 
-    // 从新存储到 lcoalStorage 里面
+    // 从新存储到 localStorage 里面
     localStorage.setItem('cartList', JSON.stringify(cartList))
   })
 
@@ -145,7 +145,7 @@ function bindEvent() {
     // 从新渲染一遍页面
     bindHtml()
 
-    // 在从新存储一遍 localStorage
+    // 重新存储一遍 localStorage
     localStorage.setItem('cartList', JSON.stringify(cartList))
   })
 
@@ -165,7 +165,7 @@ function bindEvent() {
     // 从新渲染页面
     bindHtml()
 
-    // 在从新存储一遍 localStorage
+    // 重新新存储一遍 localStorage
     localStorage.setItem('cartList', JSON.stringify(cartList))
   })
 
@@ -173,14 +173,17 @@ function bindEvent() {
   $('.cart').on('click', '.del', function () {
     // 拿到自己身上的 id
     const id = $(this).data('id')
-
-    console.log('把数组中 id 为 : ' + id + ' 的数去去掉, 重新渲染页面, 重新存储到 lcoalStorage')
+    
+    console.log('把数组中 id 为 : ' + id + ' 的数去去掉, 重新渲染页面, 重新存储到 localStorage')
   })
 
   // 4-6. 点击清除的事件
   $('.cart').on('click', '.clear', function () {
-    console.log('把数组清空')
-    console.log('从新渲染页面')
-    console.log('把空数组从新存储到 lcoalStorage 里面')
+    // console.log('把数组清空')
+    cartList.length = 0
+    // console.log('重新渲染页面')
+    bindHtml()
+    // console.log('把空数组重新存储到 localStorage 里面')
+    localStorage.setItem('cartList', JSON.stringify(cartList))
   })
 }

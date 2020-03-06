@@ -6,7 +6,7 @@ function getList() {
     url: '../lib/nav_top.json',
     dataType: 'json',
     success: function (res) {
-      console.log(res)
+      // console.log(res)
 
       // 4-1. 准备一个空字符串
       let str = ''
@@ -25,7 +25,7 @@ function getList() {
         })
         .children('li') // 找到所有的一级菜单下的 li
         .on('mouseover', function () {
-          // 5-1. 知道自己移入的时哪一个 li
+          // 5-1. 记录自己移入的是哪一个 li
           const index = $(this).index()
           // 5-2. 找到要渲染的数组
           const list = res[index].list
@@ -69,6 +69,29 @@ function getList() {
     }
   })
 }
+
+/* 横排 nav_list渲染 开始 */
+getList2()
+function getList2() {
+  $.ajax({
+    url: '../lib/nav_list.json',
+    dataType: 'json',
+    success: function (res) {
+      // console.log(res)
+
+      // 4-1. 准备一个空字符串
+      let str = ''
+
+      // 4-2. 渲染一级的 li
+      res.forEach(item => {
+        str += `<li>${ item.name }</li>`
+      })
+      $('.nav_list > ul').html(str)
+    }
+  })
+}
+/* 横排 nav_list渲染 结束 */
+
 /* nav结束 */
 
 /* 轮播图开始 */
